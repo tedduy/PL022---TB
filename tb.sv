@@ -8,6 +8,9 @@ bit [15:0] DATA;
 bit [15:0] WDATA;
 bit [15:0] RDATA;
 
+ssp_dut dut(SSP_vif);
+
+
 // Cờ bật mock trong TC1 (để chạy khi chưa có RTL)
 bit tc1_mock_en = 1'b0;
 // ===== Declarations must precede statements =====
@@ -196,3 +199,4 @@ task write(bit [11:2] addr, bit [15:0] data);
     endtask
 
 endmodule
+
