@@ -111,12 +111,12 @@ task test_case_1(); begin
     bit [31:0] rdata32;
     bit [15:0] r16;
     int pass; 
-    int fail;  // không khởi tạo tại khai báo để tránh static; set sau
+    int fail;  
     pass = 0; 
     fail = 0;
 
     // 1 = mock, 0 = RTL that
-    tc1_mock_en = 1'b1;
+    tc1_mock_en = 1'b0;
 
     // (đợi reset nhả để tránh đọc giá trị giữa lúc reset)
     wait (SSP_vif.PRESETn === 1'b1);
@@ -194,4 +194,5 @@ task write(bit [11:2] addr, bit [15:0] data);
         SSP_vif.PADDR <= '0;
         SSP_vif.PRDATA <= '0;
     endtask
+
 endmodule
