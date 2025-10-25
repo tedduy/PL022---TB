@@ -8,7 +8,6 @@ bit [15:0] DATA;
 bit [15:0] WDATA;
 bit [15:0] RDATA;
 
-ssp_dut dut(SSP_vif);
 
 
 // Cờ bật mock trong TC1 (để chạy khi chưa có RTL)
@@ -119,7 +118,7 @@ task test_case_1(); begin
     fail = 0;
 
     // 1 = mock, 0 = RTL that
-    tc1_mock_en = 1'b0;
+    tc1_mock_en = 1'b1;
 
     // (đợi reset nhả để tránh đọc giá trị giữa lúc reset)
     wait (SSP_vif.PRESETn === 1'b1);

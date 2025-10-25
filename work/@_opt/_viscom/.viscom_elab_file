@@ -1,0 +1,1 @@
+/home/buuduy/intelFPGA_lite/24.1std/questa_fse/linux_x86_64/VisualizerRls/bin/viscom -nolock -quiet -jmem_size 393216 work.tb -quiet -auto_acc_if_foreign -work work -debugdb +acc -allow_unnamed -o _opt -id 1-000ae431a4f1-68fd0256-6637d-3cfa +__betafsm

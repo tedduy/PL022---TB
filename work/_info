@@ -1,0 +1,80 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11f vlog 2024.3 2024.09, Sep 10 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/home/buuduy/WorkSpace/Ftelecom/PL022---TB
+T_opt
+!s110 1761411670
+Vh1^a<ib36Tg<QkV9joHFi2
+04 2 4 work tb fast 0
+=1-000ae431a4f1-68fd0256-6637d-3cfa
+R0
+!s12f OEM100
+!s12b OEM100
+!s124 OEM10U2 
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work -debugdb +acc
+Z2 tCvgOpt 0
+n@_opt
+OL;O;2024.3;79
+YSSP_if
+Z3 2../PL022---TB/SSP_interface.sv|../PL022---TB/tb.sv
+Z4 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z5 !s110 1761411667
+!i10b 1
+!s100 LzDm7eB?_Y5IMRETQ=jQf0
+I@4?fGW^Mn?Eko]=1kT:e12
+S1
+R1
+w1761410634
+8../PL022---TB/SSP_interface.sv
+F../PL022---TB/SSP_interface.sv
+!i122 0
+L0 1 0
+Z6 VDg1SIo80bB@j0V0VzS_@n1
+Z7 OL;L;2024.3;79
+r1
+!s85 0
+31
+Z8 !s108 1761411667.000000
+Z9 !s107 ../PL022---TB/tb.sv|../PL022---TB/SSP_interface.sv|
+Z10 !s90 -sv|-f|compile.f|-l|compile.log|
+!i113 0
+Z11 o-sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z12 !s92 -sv +incdir+../PL022---TB -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+n@s@s@p_if
+vtb
+R3
+R4
+R5
+!i10b 1
+!s100 0GEdA7>Qd=Xj<EM:8^Ed=0
+IV]X0HWG@L?C^ToRP`^;NS1
+S1
+R1
+w1761411338
+8../PL022---TB/tb.sv
+F../PL022---TB/tb.sv
+!i122 0
+L0 2 199
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R12
+R2

@@ -1,0 +1,11 @@
+BEGIN 3:SSP_if:fast__1:work
+    PWRITE :  1:tb:fast:work
+    PENABLE :  1:tb:fast:work
+    PCLK :  1:tb:fast:work
+    nSSPRST :  1:tb:fast:work
+    PADDR :  1:tb:fast:work
+    PSEL :  1:tb:fast:work
+    PRDATA :  1:tb:fast:work
+    PRESETn :  1:tb:fast:work
+    PWDATA :  1:tb:fast:work
+END 

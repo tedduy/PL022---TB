@@ -5,7 +5,7 @@ TESTNAME ?= tb
 TB_NAME  ?= tb
 RADIX    ?= hexadecimal
 SEED     ?= 1
-QUESTA_HOME ?= C:/intelFPGA_standard/24.1std/questa_fse
+QUESTA_HOME ?= /home/buuduy/intelFPGA_lite/24.1std/questa_fse
 
 #========================
 # Default target
@@ -46,17 +46,28 @@ gui:
 	     -voptargs=+acc -assertdebug $(TB_NAME) \
 	     -do "log -r /*; add wave -r /*; run -all;"
 
+##========================
+## Clean temporary files (Windows)
+##========================
+#clean:
+#	-del /Q /F work >nul 2>&1
+#	-rmdir /S /Q work >nul 2>&1
+#	-del /Q /F vsim.dbg >nul 2>&1
+#	-del /Q /F *.ini >nul 2>&1
+#	-del /Q /F *.log >nul 2>&1
+#	-del /Q /F *.wlf >nul 2>&1
+#	-del /Q /F transcript >nul 2>&1
+#	@echo ">>> Clean done!"
 #========================
-# Clean temporary files (Windows)
+# Clean temporary files (Linux)
 #========================
 clean:
-	-del /Q /F work >nul 2>&1
-	-rmdir /S /Q work >nul 2>&1
-	-del /Q /F vsim.dbg >nul 2>&1
-	-del /Q /F *.ini >nul 2>&1
-	-del /Q /F *.log >nul 2>&1
-	-del /Q /F *.wlf >nul 2>&1
-	-del /Q /F transcript >nul 2>&1
+	@rm -rf work
+	@rm -f vsim.dbg
+	@rm -f *.ini
+	@rm -f *.log
+	@rm -f *.wlf
+	@rm -f transcript
 	@echo ">>> Clean done!"
 
 #========================

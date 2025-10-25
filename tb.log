@@ -1,0 +1,53 @@
+# vsim -sv_seed 1 -debugDB -l tb.log -voptargs="+acc" -assertdebug -c tb -do "log -r /*; run -all;" 
+# Start time: 00:01:10 on Oct 26,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vsim-8611) Generating debug db.
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2024.3 linux_x86_64 Sep 10 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading sv_std.std
+# Loading work.tb(fast)
+# Loading work.SSP_if(fast__1)
+# ** Note: (vsim-8900) Creating design debug database vsim.dbg.
+# log -r /*
+#  run -all
+# ==== [TC1] Default Value Check ====
+# [PASS] SSPCR0     addr=0x0 val=0x0000
+# [PASS] SSPCR1     addr=0x4 val=0x0000
+# [PASS] SSPSR      addr=0xc val=0x0003
+# [PASS] SSPCPSR    addr=0x10 val=0x0000
+# [PASS] SSPIMSC    addr=0x14 val=0x0000
+# [PASS] SSPRIS     addr=0x18 val=0x0008
+# [PASS] SSPMIS     addr=0x1c val=0x0000
+# [PASS] SSPICR     addr=0x20 val=0x0000
+# [PASS] SSPDMACR   addr=0x24 val=0x0000
+# [PASS] PeriphID0  addr=0xfe0 val=0x0022
+# [PASS] PeriphID1  addr=0xfe4 val=0x0010
+# [PASS] PeriphID2  addr=0xfe8 val=0x0034
+# [PASS] PeriphID3  addr=0xfec val=0x0000
+# [PASS] CellID0    addr=0xff0 val=0x000d
+# [PASS] CellID1    addr=0xff4 val=0x00f0
+# [PASS] CellID2    addr=0xff8 val=0x0005
+# [PASS] CellID3    addr=0xffc val=0x00b1
+# TC1 summary: PASS=17 FAIL=0
+# At address : 12'h0 get data : WDATA = 16'h0 ---- RDATA = 16'h0
+# At address : 12'h4 get data : WDATA = 16'h0 ---- RDATA = 16'h0
+# At address : 12'h8 get data : WDATA = 16'h0 ---- RDATA = 16'h0
+# At address : 12'hc get data : WDATA = 16'h0 ---- RDATA = 16'h0
+# ** Note: $finish    : ../PL022---TB/tb.sv(75)
+#    Time: 2570 ns  Iteration: 0  Instance: /tb
+# End time: 00:01:10 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
